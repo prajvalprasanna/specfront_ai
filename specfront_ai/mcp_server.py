@@ -3,13 +3,13 @@ from fastmcp import FastMCP
 from typing import Dict, Any, List
 
 # Setup detailed logging
-logger = logging.getLogger("techfront_ai.mcp_server")
+logger = logging.getLogger("specfront_ai.mcp_server")
 logger.setLevel(logging.INFO)
 
 # Initialize FastMCP Server
-mcp = FastMCP("techfront_ai")
+mcp = FastMCP("specfront_ai")
 
-logger.info("Initializing techfront_ai FastMCP server tools...")
+logger.info("Initializing specfront_ai FastMCP server tools...")
 
 @mcp.tool()
 def get_jira_issue(issue_key: str) -> Dict[str, Any]:

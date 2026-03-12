@@ -17,4 +17,7 @@ dependencies = [
 ]
 
 [project.scripts]
-specfront_ai = "techfront_ai.cli:main"
+specfront_ai = "specfront_ai.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["specfront_ai"]

@@ -1,6 +1,6 @@
 # Techfront AI: Pip Packaging & Distribution Guide
 
-This guide outlines exactly how to build and package `techfront_ai` as a proper pip package and distribute it via PyPI.
+This guide outlines exactly how to build and package `specfront_ai` as a proper pip package and distribute it via PyPI.
 
 ## Prerequisites
 
@@ -20,8 +20,8 @@ python -m build
 ```
 
 The output will be placed in a newly created `dist/` directory. You should see two files, similar to:
-- `dist/techfront_ai-0.1.0-py3-none-any.whl` (Built Distribution)
-- `dist/techfront_ai-0.1.0.tar.gz` (Source Distribution)
+- `dist/specfront_ai-0.1.0-py3-none-any.whl` (Built Distribution)
+- `dist/specfront_ai-0.1.0.tar.gz` (Source Distribution)
 
 ## Step 2: Local Testing (Optional but Recommended)
 
@@ -35,14 +35,14 @@ test_env\Scripts\activate
 source test_env/bin/activate
 
 # Install the built wheel
-pip install dist/techfront_ai-0.1.0-py3-none-any.whl
+pip install dist/specfront_ai-0.1.0-py3-none-any.whl
 ```
 
 Once installed, verify the CLI works:
 ```bash
-techfront_ai --help
-techfront_ai init
-techfront_ai mcp
+specfront_ai --help
+specfront_ai init
+specfront_ai mcp
 ```
 
 ## Step 3: Publishing to PyPI

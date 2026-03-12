@@ -9,7 +9,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
-logger = logging.getLogger("techfront_ai.cli")
+logger = logging.getLogger("specfront_ai.cli")
 
 def init_workspace():
     from .templates import (
@@ -26,10 +26,10 @@ def init_workspace():
     logger.debug(f"Ensured directory exists: {agent_dir}")
     
     agents_to_create = {
-        "techfront_ai.agent.md": AGENT_TEMPLATE,
-        "techfront_ai_planner.agent.md": PLANNER_TEMPLATE,
-        "techfront_ai_coder.agent.md": CODER_TEMPLATE,
-        "techfront_ai_tester.agent.md": TESTER_TEMPLATE,
+        "specfront_ai.agent.md": AGENT_TEMPLATE,
+        "specfront_ai_planner.agent.md": PLANNER_TEMPLATE,
+        "specfront_ai_coder.agent.md": CODER_TEMPLATE,
+        "specfront_ai_tester.agent.md": TESTER_TEMPLATE,
     }
 
     for filename, content in agents_to_create.items():
@@ -63,7 +63,7 @@ def init_workspace():
     else:
         logger.warning(f"MCP configuration already exists at: {mcp_config_file}. Skipping creation.")
         
-    logger.info("Initialization complete. Try '@techfront_ai Hello' in Copilot Chat.")
+    logger.info("Initialization complete. Try '@specfront_ai Hello' in Copilot Chat.")
 
 def main():
     parser = argparse.ArgumentParser(description="Specfront AI CLI")

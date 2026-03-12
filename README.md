@@ -6,12 +6,12 @@ It also includes an integrated **FastMCP Server** to pull context directly from 
 
 ## 🌟 Features
 
-*   **Native Copilot Integration:** Agents live right in your IDE chat. Just type `@techfront_ai`.
+*   **Native Copilot Integration:** Agents live right in your IDE chat. Just type `@specfront_ai`.
 *   **Multi-Agent Architecture:** Delegate tasks to specialized personas:
-    *   `@techfront_ai` (Supervisor): Orchestrates the workflow and delegates commands.
-    *   `@techfront_ai_planner`: Focuses strictly on writing Markdown Specifications and Jira tickets.
-    *   `@techfront_ai_coder`: Implements code based *only* on the strict requirements of the spec.
-    *   `@techfront_ai_tester`: Writes test suites to prove the spec's Acceptance Criteria are met.
+    *   `@specfront_ai` (Supervisor): Orchestrates the workflow and delegates commands.
+    *   `@specfront_ai_planner`: Focuses strictly on writing Markdown Specifications and Jira tickets.
+    *   `@specfront_ai_coder`: Implements code based *only* on the strict requirements of the spec.
+    *   `@specfront_ai_tester`: Writes test suites to prove the spec's Acceptance Criteria are met.
 *   **Official MCP Integration:** Automatically generates an `mcp-servers.json` configuration file, securely linking your IDE to the official GitHub, Figma, and Jira Model Context Protocol servers.
 
 ---
@@ -44,10 +44,10 @@ Copilot will automatically detect these `.agent.md` files—**no restarts needed
 
 ### 3. Talk to the Agent
 Open Copilot Chat and invoke the supervisor:
-> `@techfront_ai Hello! I want to start building the Hotel Inventory module.`
+> `@specfront_ai Hello! I want to start building the Hotel Inventory module.`
 
 Or invoke a specialized agent directly to get to work:
-> `@techfront_ai_coder /implement Please read the hotel_inventory.md spec and create the Django models.`
+> `@specfront_ai_coder /implement Please read the hotel_inventory.md spec and create the Django models.`
 
 ---
 

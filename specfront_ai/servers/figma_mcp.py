@@ -2,12 +2,12 @@ import logging
 from fastmcp import FastMCP
 from typing import Dict, Any, List
 
-logger = logging.getLogger("techfront_ai.servers.figma")
+logger = logging.getLogger("specfront_ai.servers.figma")
 logger.setLevel(logging.INFO)
 
 # Initialize Figma FastMCP Server
 mcp = FastMCP("Techfront Figma Server")
-logger.info("Initializing techfront_ai Figma FastMCP server tools...")
+logger.info("Initializing specfront_ai Figma FastMCP server tools...")
 
 @mcp.tool()
 def get_figma_node(file_key: str, node_id: str) -> Dict[str, Any]:

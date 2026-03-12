@@ -2,12 +2,12 @@ import logging
 from fastmcp import FastMCP
 from typing import List
 
-logger = logging.getLogger("techfront_ai.servers.github")
+logger = logging.getLogger("specfront_ai.servers.github")
 logger.setLevel(logging.INFO)
 
 # Initialize GitHub FastMCP Server
 mcp = FastMCP("Techfront GitHub Server")
-logger.info("Initializing techfront_ai GitHub FastMCP server tools...")
+logger.info("Initializing specfront_ai GitHub FastMCP server tools...")
 
 @mcp.tool()
 def search_github_code(query: str, repo_owner: str, repo_name: str) -> List[str]:
