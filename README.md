@@ -1,6 +1,6 @@
-# Techfront AI - Spec-Driven Copilot Agents
+# Specfront AI - Spec-Driven Copilot Agents
 
-Techfront AI provides a "zero-friction" architecture for **Spec-Driven Development (SDD)** natively inside your GitHub Copilot workspace. By using `.github/agents/*.agent.md` files, this package instantly configures a **Supervisor Agent** and specialized **Worker Agents** (Planner, Coder, Tester) in your IDE, without needing complex LangChain orchestrators or external API keys.
+Specfront AI provides a "zero-friction" architecture for **Spec-Driven Development (SDD)** natively inside your GitHub Copilot workspace. By using `.github/agents/*.agent.md` files, this package instantly configures a **Supervisor Agent** and specialized **Worker Agents** (Planner, Coder, Tester) in your IDE, without needing complex LangChain orchestrators or external API keys.
 
 It also includes an integrated **FastMCP Server** to pull context directly from Jira and Figma into your Copilot Chat.
 
@@ -18,7 +18,7 @@ It also includes an integrated **FastMCP Server** to pull context directly from 
 
 ## 🚀 Installation & Usage
 
-Because Techfront AI is packaged purely as a CLI tool, installation takes seconds.
+Because Specfront AI is packaged purely as a CLI tool, installation takes seconds.
 
 ### 1. Install via PyPI
 You can install the package directly into your virtual environment from the Python Package Index once published:

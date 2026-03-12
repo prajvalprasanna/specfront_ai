@@ -6,7 +6,7 @@ logger = logging.getLogger("specfront_ai.servers.jira")
 logger.setLevel(logging.INFO)
 
 # Initialize Jira FastMCP Server
-mcp = FastMCP("Techfront Jira Server")
+mcp = FastMCP("Specfront Jira Server")
 logger.info("Initializing specfront_ai Jira FastMCP server tools...")
 
 @mcp.tool()

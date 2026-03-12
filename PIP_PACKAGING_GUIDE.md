@@ -1,4 +1,4 @@
-# Techfront AI: Pip Packaging & Distribution Guide
+# Specfront AI: Pip Packaging & Distribution Guide
 
 This guide outlines exactly how to build and package `specfront_ai` as a proper pip package and distribute it via PyPI.
 

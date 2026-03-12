@@ -6,7 +6,7 @@ logger = logging.getLogger("specfront_ai.servers.github")
 logger.setLevel(logging.INFO)
 
 # Initialize GitHub FastMCP Server
-mcp = FastMCP("Techfront GitHub Server")
+mcp = FastMCP("Specfront GitHub Server")
 logger.info("Initializing specfront_ai GitHub FastMCP server tools...")
 
 @mcp.tool()
@@ -17,7 +17,7 @@ def search_github_code(query: str, repo_owner: str, repo_name: str) -> List[str]
     
     Args:
         query: The codebase search term (e.g., 'def init_workspace')
-        repo_owner: The organization or user (e.g., 'techfront')
+        repo_owner: The organization or user (e.g., 'specfront')
         repo_name: The repository name (e.g., 'core-app')
     """
     logger.info(f"GitHub Tool called: searching {repo_owner}/{repo_name} for '{query}'")

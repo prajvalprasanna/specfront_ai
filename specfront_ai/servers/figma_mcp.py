@@ -6,7 +6,7 @@ logger = logging.getLogger("specfront_ai.servers.figma")
 logger.setLevel(logging.INFO)
 
 # Initialize Figma FastMCP Server
-mcp = FastMCP("Techfront Figma Server")
+mcp = FastMCP("Specfront Figma Server")
 logger.info("Initializing specfront_ai Figma FastMCP server tools...")
 
 @mcp.tool()
