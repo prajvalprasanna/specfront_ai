@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "specfront_ai"
+version = "0.1.0"
+description = "Spec-Driven AI Agent Architecture with MCP Integration"
+readme = "README.md"
+authors = [
+    { name = "Techfront AI Team" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "fastmcp>=0.1.0",
+    "requests",
+]
+
+[project.scripts]
+techfront_ai = "techfront_ai.cli:main"
