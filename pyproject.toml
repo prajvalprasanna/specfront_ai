@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "specfront_ai"
-version = "0.1.1"
+version = "0.3.4"
 description = "Spec-Driven AI Agent Architecture with MCP Integration"
 readme = "README.md"
 authors = [
